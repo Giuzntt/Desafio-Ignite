@@ -28,11 +28,9 @@ export const styles = StyleSheet.create({
     marginRight: 7,
     borderRadius: 5,
     padding: 10,
-    "::placeholder": {
-      color: "white",
-      fontSize: 20,
-      fontWeight: "100",
-    },
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    borderWidth: 1,
   },
 
   inputText: {
@@ -62,13 +60,6 @@ export const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "center",
     zIndex: 1,
-  },
-
-  emptyList: {
-    textAlign: "center",
-    color: "white",
-    fontSize: 20,
-    fontWeight: "100",
   },
 
   listBackground: {
@@ -149,5 +140,29 @@ export const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "column",
     padding: 5,
+  },
+
+  emptyList: {
+    width: "100%",
+    height: 208,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 10,
+  },
+  logoClipboard: {},
+
+  emptyListTextBold: {
+    color: "#808080",
+    fontSize: 14,
+    fontWeight: "700",
+    lineHeight: 24,
+  },
+  emptyListText: {
+    color: "#808080",
+    fontSize: 14,
+    fontWeight: "400",
+    lineHeight: 24,
   },
 });
